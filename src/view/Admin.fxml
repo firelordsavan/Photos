@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Naveenan Yogeswaran -->
+<!-- Savan Patel -->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminController">
+   <children>
+      <Text layoutX="248.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Text>
+      <ListView fx:id="userListView" layoutX="80.0" layoutY="83.0" prefHeight="233.0" prefWidth="455.0" />
+      <Button layoutX="220.0" layoutY="333.0" mnemonicParsing="false" text="Delete Selected User" onAction="#deleteUser">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="252.0" layoutY="384.0" mnemonicParsing="false" text="Create User" onAction="#createUser">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="490.0" layoutY="23.0" mnemonicParsing="false" text="Logout" onAction="#logout">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
